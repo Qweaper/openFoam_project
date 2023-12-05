@@ -8,7 +8,3 @@ app = FastAPI()
 def main():
     return {"status": 200, "message":"Welcome"}
 
-
-if __name__ == "__main__":
-    app.run()
-
