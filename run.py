@@ -1,10 +1,14 @@
-from flask import Flask
+#!/bin/python
 
-app = Flask(__name__)
+from fastapi import FastAPI
+from fastapi.responses import HTMLResponse
+app = FastAPI()
 
-@app.route('/main')
+@app.get('/')
 def main():
-    return {'code': 200, 'message': 'hello'}
+    return {"status": 200, "message":"Welcome"}
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     app.run()
+
