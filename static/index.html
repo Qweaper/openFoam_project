@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Гидродинамика</title>
 </head>
-<body>
-    <h1>Рассчёт трубы с элипсом</h1>
-    <span>
+<body class="offset">
+    <h2 class="display-2" style="text-align: center;">Рассчёт потока в трубе с эллипсом</h2>
+    <hr class="border border-primary border-3 opacity-75">
+    <span class="wrapper">
         <img src="../img/demo_image.png">
-        <form action="">
-            <ul>
+        <form action="" class="offset">
+            <ul class="vars-list">
+                <li><h6>Параметры</h6></li>
                 <li>
-                    <input type="text">
+                    <label for="H" class="form-label">Высота трубы: H</label>
+                    <input type="text" class="form-control" id="H" placeholder="75">
                 </li>
                 <li>
-                    <input type="text">
+                    <label for="W" class="form-label">Длина трубы: W</label>
+                    <input type="text" class="form-control" id="W" placeholder="200">
                 </li>
                 <li>
-                    <input type="text">
+                    <label for="l" class="form-label">Главная ось эллипса: l</label>                    
+                    <input type="text" class="form-control" id="l" placeholder="40">
                 </li>
                 <li>
-                    <input type="text">
+                    <label for="h" class="form-label">Побочная ось эллипса: h</label>
+                    <input type="text" class="form-control" id="h" placeholder="20">
                 </li>
             </ul>
+            <button type="submit" class="btn btn-primary">Расситать</button>
         </form>
     </span>
 </body>

@@ -1,0 +1,22 @@
+
+
+.vars-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.offset {
+    padding: 50px;
+}
+
+li {
+    width: 250px;
+    margin-bottom: 15px;
+}
