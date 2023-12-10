@@ -11,31 +11,31 @@
 <body class="offset">
     <h2 class="display-2" style="text-align: center;">Рассчёт потока в трубе с эллипсом</h2>
     <hr class="border border-primary border-3 opacity-75">
-    <span class="wrapper">
-        <img src="../img/demo_image.png">
-        <form action="" class="offset">
+    <div class="wrapper">
+        <img src="../img/demo_image.png" alt="Чертёж геометрии трубы">
+        <form class="offset" id="user-form">
             <ul class="vars-list">
                 <li><h6>Параметры</h6></li>
                 <li>
                     <label for="H" class="form-label">Высота трубы: H</label>
-                    <input type="text" class="form-control" id="H" placeholder="75">
+                    <input id="H" type="number" class="form-control" placeholder="75" required>
                 </li>
                 <li>
                     <label for="W" class="form-label">Длина трубы: W</label>
-                    <input type="text" class="form-control" id="W" placeholder="200">
+                    <input id="W" type="number" class="form-control" placeholder="400" required>
                 </li>
                 <li>
                     <label for="l" class="form-label">Главная ось эллипса: l</label>                    
-                    <input type="text" class="form-control" id="l" placeholder="40">
+                    <input id="l" type="number" class="form-control" placeholder="40" required>
                 </li>
                 <li>
                     <label for="h" class="form-label">Побочная ось эллипса: h</label>
-                    <input type="text" class="form-control" id="h" placeholder="20">
+                    <input id="h" type="number" class="form-control"  placeholder="20" required>
                 </li>
             </ul>
-            <button type="submit" class="btn btn-primary">Расситать</button>
+            <button type="submit" id="submitBnt" class="btn btn-primary">Рассчитать</button>
         </form>
-    </span>
+    </div>
+    <script defer src="../scripts/app.js"></script>
 </body>
 </html>
-

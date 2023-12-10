@@ -15,10 +15,10 @@ FoamFile
 
 convertToMeters 0.01;
 
-H 75;
-W 100;
-l 40;
-h 10;
+H 100;
+W 600;
+h 30;
+l 50;
 neg_h #calc "-$h";
 
 // for block_1
